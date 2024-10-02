@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <base target="_blank">
 </head>
 <body>
-    <h1>Hello!! KIUKI. 22. 3,4,5...</h1>
+    <h1 id="start">Hello!! KIUKI. 22. 3,4,5...</h1>
     <h1>Hello!! </h1>
     <span>dsnfondsiofnhdigndfnfdfs</span>
     <span>dsnfondsiofnhdigndfnfdfs</span>
@@ -66,6 +67,7 @@
         <option value="Сідоров">Сідоров</option>
     </select>
 
+    <a name="tablescore"></a>
     <table border="1">
         <caption>Успішність студентів</caption>
         <thead>
@@ -96,5 +98,82 @@
         </tr>
     </tbody>
     </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <form action="#" method="post" id="form1">
+        <fieldset>
+            <legend>Форма реєстрації:</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="username">Input username:</label></td>
+                        <td><input type="text" name="username" id="username" value="Ivanov"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass1">Input password:</label></td>
+                        <td><input type="password" name="pass1" id="pass1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass2">Repeat password:</label></td>
+                        <td><input type="password" name="pass2" id="pass2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Add user"></td>
+                        <td><input type="reset" value="Reset"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+
+    <form action="#" method="get" id="form2">
+        <fieldset>
+            <legend>Vote:</legend>
+            <input type="radio" name="vote1" id="vote11"><label for="vote11">First variant</label><br>
+            <input type="radio" name="vote1" id="vote12"><label for="vote12">Second variant</label><br>
+            <input type="radio" name="vote1" id="vote13"><label for="vote13">Third variant</label><br>
+            <button>Vote!</button>
+            <br><br>
+            <select name="vote2" id="vote2">
+                <optgroup label="group 1">
+                    <option value="vote21">First</option>
+                    <option value="vote22">Second</option>
+                </optgroup>
+                <optgroup label="group 2">
+                    <option value="vote23">Third</option>
+                </optgroup>
+            
+            </select>
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <legend>Student:</legend>    
+        <label for="name">Вкажіть ім'я:</label>
+        <input type="text" name="name" id="name" value="Іванов">
+        <fieldset>
+            <legend>Вкажіть стать:</legend>
+            <input type="radio" name="sex" id="male"><label for="male">Male</label><br>
+            <input type="radio" name="sex" id="fem"><label for="vote12">Female</label>
+        </fieldset>
+        <input type="checkbox" name="check1" id="check1"><label for="check1">Чи наявний диплом молодшого
+            спеціаліста</label><br>
+        <button>Vote!</button>
+    </fieldset>
+
+    <br><br><br>
+
+    <a href="https://nure.ua/en/" target="_self">NURE</a>
+    <a href="https://nure.ua/en/"><img src="https://nure.ua/wp-content/themes/nure/images/logo.png?v=2.0" alt="NURE website" width="52" height="52"></a>
+    <a href="#start" target="_self">Return</a><br>
+    <a href="#form1" target="_self">Form1</a><br>
+    <a href="index.html#form2" target="_self">Form2</a><br>
+    <a href="#tablescore" target="_self">Return to table</a>
+    <a href="page.html#somesection" target="_self">To next page</a>
+    <a href="file:///D:/Programming/WorkspaceVSC/ITech1/kiuki22_345/page.html" target="_self">To next page</a>
 </body>
 </html>
